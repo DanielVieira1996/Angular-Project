@@ -1,0 +1,18 @@
+.commentSection{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 100px 1fr;
+}
+
+.imageCommentUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconsComment{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+

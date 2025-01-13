@@ -1,0 +1,17 @@
+    <div>
+        @if(isLoading===true){
+          <article>
+            <h2 class="titleArticle">{{articles[contentId()].title}}</h2>
+            <div class="contentArticle">
+              <p>{{articles[contentId()].description}}</p>
+          </div>
+           </article>
+           @for(item of articles; track $index){
+            <app-comments></app-comments>
+
+           }
+        }
+        @else {
+          <p>IsLoading</p>
+        }      
+    </div>

@@ -1,0 +1,16 @@
+<form [formGroup]="form">
+    <h2>Do you have another information. Update information and we will check.</h2>
+  
+    <div class="control-row">
+     
+        <label>Title</label>
+        {{titleNew}}
+      
+        <label>Text</label>
+        <textarea [formControl]="form.controls.textNew">Insira o texto</textarea>
+     
+  
+      <button class="button" >Confirmar</button>
+    </div> 
+  
+  </form>

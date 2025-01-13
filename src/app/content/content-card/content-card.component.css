@@ -1,0 +1,167 @@
+/* article {
+    color: #25113d;
+  }
+  
+  .titleContent{
+    text-align: center;
+  }
+
+  .actionsContent{
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  h2 {
+    margin: 0;
+  }
+  
+  time {
+    color: #3c2c50;
+  }
+  
+  
+  .actionsContent button {
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #033c6b;
+    color: #decdf2;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #4a0774;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  hr{
+    border: 1px solid #033c6b;
+  } */
+
+.newArticle{
+  flex:1;
+  display: flex;
+  flex-direction:row;
+  margin-top: 10px;
+}
+
+
+
+.imageArticle{
+  width:200px;
+  padding:2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageArticle img{
+  object-fit: cover;
+  object-position: center;
+  width:200px;
+  height: 200px;
+}
+.contentArticle{
+  flex:2;
+  min-width:300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contentArticle h2{
+  margin-bottom:10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.contentArticleContent{
+  padding-left: 10px;
+  color: black;
+
+}
+.buttonsContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.buttonsContent button{
+  padding: 5px;
+  width: 200px;
+  background: linear-gradient(
+    to bottom,
+    #99ADD4,
+    #31508D
+  );
+  border: none;
+  font-size: 15px;
+  border-radius: 3px;
+  color: white;
+  opacity:1
+}
+
+.buttonsContent button:hover{
+  scale: 1.1;
+  opacity: 0.6;
+  transition: opacity 1s;
+}
+
+.optionsNew{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.optionsNew .form-control{
+  flex:2;
+}
+
+.optionsNew .form-select{
+  flex:1
+}
+
+.socialNetwork{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.socialNetwork i{
+  font-size: 40px;
+}
+
+.socialNetwork i:hover:not(.bi-heart-fill){
+  color: #033c6b;
+  cursor: pointer;
+}
+
+.socialNetwork .bi-heart-fill:hover{
+  color: rgb(190, 18, 18);
+  cursor: pointer;
+}
+
+.paginationBox{
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBox li.active {
+  background-color: #bd4b00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+

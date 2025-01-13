@@ -1,0 +1,28 @@
+<div class="commentSection">
+    <div class="imageCommentUser"> 
+        <img src="favicon.ico">  
+    </div>
+    <div>
+    <div class="nameCommentUser">
+          <p>Daniel</p> 
+    </div>
+    <div class="messageComment">
+        <h2>I don't like the article</h2>
+    </div>
+    <div class="iconsComment">
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-chat" (click)="addComment()"></i>
+        <i class="bi bi-heart-fill"></i>
+    </div>
+    </div>
+</div>
+@if(comment){
+    <div class="newComment">
+        <div class="input-group">
+            <span class="input-group-text">Answer this comment</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+    </div>
+}
+
+

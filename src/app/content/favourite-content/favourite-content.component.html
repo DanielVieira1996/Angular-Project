@@ -1,0 +1,13 @@
+
+<div class="favouriteContent">
+    <div class="titleFavouriteContent">
+        <h2>Most visited</h2>
+    </div>
+    @for (article of newArticles(); track $index) {
+    <div class="contentFavouriteContent">
+        
+        <p class="titleArticle" [routerLink]="['/content', article.id]">{{article.title}}</p>
+        <p class="likesArticle">{{article.likes}} </p>
+    </div>
+}
+</div>

@@ -1,0 +1,32 @@
+.favouriteContent{
+    border:2px solid #033c6b;;
+    border-radius:3px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.contentFavouriteContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contentFavouriteContent p{
+    color:#033c6b;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.titleArticle{
+    flex:10
+}
+
+.likesArticle{
+    flex: 1;
+}

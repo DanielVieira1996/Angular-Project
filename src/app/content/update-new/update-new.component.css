@@ -1,0 +1,12 @@
+.control-row {
+    flex-direction:column
+  }
+  
+  .control {
+    flex: 1;
+  }
+  
+  button {
+    padding: 0.6rem 1.75rem;
+  }
+  

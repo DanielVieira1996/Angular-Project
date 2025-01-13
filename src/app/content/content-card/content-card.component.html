@@ -1,0 +1,59 @@
+<!-- @if (update===true) { -->
+<!-- <app-update-new [updateNews]="updateNew" (changeNews)="updateCard($event)"></app-update-new> -->
+<!-- }
+@else { -->
+
+<div class="optionsNew">
+  <input class="form-control" placeholder="Type to search..."  (input)="onInputChange($event)">
+  <select class="form-select" aria-label="Default select example" (input)="onchangeOrder($event)">
+    <option value="asc" selected>Ascendent</option>
+    <option value="des">Descendent</option>
+    <option value="likes">Likes</option>
+  </select>
+</div>
+
+@for (item of filteredArticles(); track $index) {
+<!--   @if (item.completed===false) { -->
+
+<div class="allNewArticles">
+  <div class="newArticle">
+    <div class="imageArticle">
+
+      <img [src]="item.urlToImage">
+    </div>
+    <div class="contentArticle">
+      <h2 [routerLink]="['/content', item.id]">{{item.title}}</h2>
+      <div class="contentArticleContent">
+        <p>{{item.content}}</p>
+      </div>
+      <div class="buttonsContent">
+        <button (click)="deleteArticle(item.title)">Delete</button>
+        <button> Tenho mais informações</button>
+      </div>
+    </div>
+    <div class="shareContent">
+
+    </div>
+
+  </div>
+  <div class="socialNetwork">
+    <i class="bi bi-twitter-x"></i>
+    <i class="bi bi-chat"></i>
+    <i class="bi bi-heart-fill"  (click)="onLikeArticle(item.title)"></i>
+    <h2>{{item.likes}}</h2>
+  </div>
+</div>
+}
+<div class="paginationBox">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      @for(item of range; track $index; let index = $index){
+        <li class="page-item" (click)="paginationArticle($event)"><a class="page-link" [class.active]="start() === index + 1">{{index+1}}</a></li>
+      }
+    </ul>
+  </nav>
+</div>
+
+<!-- } -->
+<!-- @else {}
+  }} -->

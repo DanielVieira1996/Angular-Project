@@ -1,0 +1,51 @@
+
+.titleArticle{
+    text-align: center;
+}
+
+.contentArticle{
+  margin-top: 1rem;
+  color: #033c6b;
+  font-weight: 700;
+}
+
+ /*  .actionsContent{
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  h2 {
+    margin: 0;
+  }
+  
+  time {
+    color: #3c2c50;
+  } */
+  
+  
+  /* .actionsContent button {
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #033c6b;
+    color: #decdf2;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #4a0774;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  hr{
+    border: 1px solid #033c6b;
+  } */
+
+
