@@ -30,7 +30,7 @@ export class LoginComponent {
     onSubmit(){
       const email= this.loginForm.value.email;
       const pass=this.loginForm.value.password;
-      if(email==="daniel@hotmail.com" && pass==="1vvkzbmq#Benfica96"){
+      if(email==="daniel@hotmail.com" && pass==="testedaniel123456"){
         console.log("accesso permitido");
         window.localStorage.setItem('login', JSON.stringify({email:email, password: pass}));
         this.router.navigate(["/main"]);
